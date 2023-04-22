@@ -1147,10 +1147,10 @@ textarea {
 @media (max-width:375px) {
     /* quinta_seccion */
     .conteiner_footer {
-        height: 160vh;
+        height: 140vh;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
+        gap: 5px; 
     }
 
     .footer_Contact {
@@ -1184,7 +1184,7 @@ textarea {
 
     /* segunda seccion */
     .about_seccion {
-        height: 150vh;
+        height: 145vh;
     }
     .section_title {
         text-align: center;
