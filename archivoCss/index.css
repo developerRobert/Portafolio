@@ -1147,7 +1147,7 @@ textarea {
 @media (max-width:375px) {
     /* quinta_seccion */
     .conteiner_footer {
-        height: 140vh;
+        height: 130vh;
         flex-direction: column;
         justify-content: center;
         gap: 5px; 
@@ -1168,8 +1168,9 @@ textarea {
     }
     .footer_form {
         width: 300px;
-        height: 450px;
+        height: 480px;
     }
+   
 
 
     /* cuarta seccion */
@@ -1184,12 +1185,21 @@ textarea {
 
     /* segunda seccion */
     .about_seccion {
-        height: 145vh;
+        height: 140vh;
     }
     .section_title {
         text-align: center;
         margin: 20px auto;
     } 
+    .about_section_img{
+        width: 330px;
+        height: 350px;
+
+    }
+    .about_section_img:hover {
+    border-radius: 0px;
+    }
+
     /* primera_seccion */
     .portada_section_img {
         width: 330px;
