@@ -1194,6 +1194,7 @@ textarea {
     .about_section_img{
         width: 330px;
         height: 350px;
+        border-radius: 0px;
 
     }
     .about_section_img:hover {
