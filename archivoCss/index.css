@@ -152,10 +152,17 @@ html {
 
 
 /* primera seccion _________________________________________________*/
-.fa-phone{
-    font-size: 15px;
-    margin: 5px;
+.fa-solid{
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+ 
 
+}
+.fa-download{
+    font-size: 22px;
 }
 
 .portada_section {
@@ -225,19 +232,19 @@ html {
 
 .section_btn {
     text-decoration: none;
-    padding: 12px;
+    padding: 10px;
     background-color: blue;
     border-radius: 8px;
     color: white;
     letter-spacing: 1px;
     display: block;
-    width: 160px;
+    width: 220px;
     margin-top: 30px;
-    font-size: 20px;
-    text-align: center;
+    font-size: 19px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    /* gap: 50px; */
 
 }
 
@@ -1141,13 +1148,27 @@ textarea {
     /* quinta_seccion */
     .conteiner_footer {
         height: 160vh;
-        
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
     }
 
+    .footer_Contact {
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 auto;
+    }
+    .footer_icon_conteiner {
+        height: 40px;
+        width: 40px;
+    }
+
+    .contac_li {
+        font-size: 20px;
+    }
     .footer_form {
         width: 300px;
-        height: 430px;
-        margin: 15px auto;
+        height: 450px;
     }
 
 
@@ -1158,12 +1179,12 @@ textarea {
     }
 
     .section_project_ul {
-        gap: 20px;
+        gap: 10px;
     }
 
     /* segunda seccion */
     .about_seccion {
-        height: 180vh;
+        height: 150vh;
     }
     .section_title {
         text-align: center;
@@ -1176,6 +1197,10 @@ textarea {
     }
     .portada_section_titulo_descripcion {
         font-size: 25px;
+    }
+    .section_btn {
+        padding: 15px;
+        width: 230px;
     }
 
 
