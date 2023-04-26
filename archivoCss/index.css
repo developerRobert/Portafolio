@@ -1123,10 +1123,23 @@ textarea {
     .section_title{
         margin: 0 auto;
     }
+    .about_section_descripcion_titulo {
+        border-bottom:0px;
+        /* margin: 0 auto; */
+        margin-bottom: 21px;
+        margin-top: 10px;
+        
+    }
+    .about_section_datosPersonales {
+        border-bottom: 0px;
+        /* margin: 0 auto; */
+        margin-bottom: 21px;
+        
+    }
 
     /* primera seccion */
     .portada_section{
-        height: 130vh;
+        height: 118vh;
     }
     .portada_section_img {
         width: 350px;
@@ -1135,13 +1148,17 @@ textarea {
 
     /* segunda seccion */
     .about_seccion{
-        height: 170vh;
+        height: 155vh;
 
     }
     .about_section_img{
-        width: 300px;
-        height: 300px;
-        
+        width: 350px;
+        height: 350px;
+        border-radius: 0px;
+    }
+   
+    .about_section_img:hover {
+    border-radius: 0px;
     }
 
     /* cuarta seccion */
@@ -1151,44 +1168,41 @@ textarea {
 
      /* quinta_seccion */
      .conteiner_footer {
-        height: 160vh;
+        height: 140vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 35px; 
     }
 
     .footer_Contact {
         flex-direction: column;
-        gap: 10px;
-    }
-
-    .footer_conteiner_icon {
         gap: 15px;
-        margin: 0px auto;  
+        margin: 0 auto;
+    }
+    .footer_icon_conteiner {
+        height: 45px;
+        width: 45px;
     }
 
+    .contac_li {
+        font-size: 20px;
+    }
     .footer_form {
         width: 350px;
-        height: 430px;
-        margin: 20px auto;
+        height: 440px;
+       
     }
-
-    .footer_icon_conteiner {
-        height: 30px;
-        width: 30px;
-    }
-
     textarea {
         height: 50px;
     }
+    .footer_redes {
+        gap: 30px;
 
-
-    .footer_title_contact {
-        margin: 0px auto;
     }
-    .contac_li{
-        font-size: 18px;
-    }
-
-
-    
+    .footer_conteiner_icon {
+        gap: 15px;
+         
+    } 
 }
 @media (max-width:375px) {
 
@@ -1208,31 +1222,16 @@ textarea {
     }
 
     /* quinta_seccion */
-    .conteiner_footer {
-        height: 130vh;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px; 
-    }
-
-    .footer_Contact {
-        flex-direction: column;
-        gap: 30px;
-        margin: 0 auto;
-    }
-    .footer_icon_conteiner {
-        height: 40px;
-        width: 40px;
-    }
-
-    .contac_li {
-        font-size: 20px;
-    }
     .footer_form {
         width: 300px;
-        height: 480px;
+        height: 430px;
+       
     }
-   
+    .conteiner_footer {
+        height: 145vh;
+        gap: 40px; 
+    }
+    
 
 
     /* cuarta seccion */
@@ -1247,21 +1246,13 @@ textarea {
 
     /* segunda seccion */
     .about_seccion {
-        height: 140vh;
+        height: 148vh;
     }
     .section_title {
         text-align: center;
         margin: 20px auto;
     } 
-    .about_section_img{
-        width: 330px;
-        height: 350px;
-        border-radius: 0px;
-
-    }
-    .about_section_img:hover {
-    border-radius: 0px;
-    }
+   
 
     /* primera_seccion */
     .portada_section_img {
