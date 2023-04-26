@@ -110,7 +110,7 @@ html {
 .nav_items {
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 21px;
     letter-spacing: 1px;
     font-weight: 900;
     position: relative;
@@ -425,6 +425,10 @@ html {
 .icon_javascript {
     background-image: url("../Icon/javascript.svg");
 }
+.icon_git{
+    background-image: url("../Icon/github-icon.svg");
+}
+
 
 /* cuarte seccion ________________________________________________*/
 .section_project {
@@ -483,6 +487,13 @@ html {
 .section_project_li:hover {
     color: black;
 }
+.btns{
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
+    font-weight: 600;
+}
+
 
 .section_project_card {
     display: flex;
@@ -506,12 +517,12 @@ html {
 .project_cards_titulo {
     background-color: blue;
     width: 90%;
-    height: 30px;
+    height: 26px;
     margin: 10px auto;
     text-align: center;
     padding: 4px;
     color: white;
-    border-radius: 8px;
+    border-radius: 4px;
     letter-spacing: 1px;
 }
 
@@ -555,16 +566,17 @@ html {
 }
 
 .project_cards_btn {
-    border: none;
-    margin: 10px auto;
-    padding: 15px;
+    text-decoration: none;
+    /* margin: 10px auto; */
+    padding: 5px;
     width: 90%;
-    height: 50px;
-    font-size: 18px;
+    height: 35px;
+    font-size: 22px;
     letter-spacing: 1px;
     border-radius: 8px;
     background-color: blue;
     color: #fff;
+    text-align: center;
 }
 
 .project_cards_btn:hover {
@@ -572,7 +584,7 @@ html {
     background-repeat: no-repeat;
     color: white;
     transition: all .5s;
-    font-size: 18px;
+    /* font-size: 20px; */
 }
 
 
@@ -791,6 +803,39 @@ textarea {
 .footer_contacto_titulo {
     font-size: 10px;
 }
+/* go_top___________________________________ */
+/* .ir_top_conteiner{
+    position: fixed;
+    bottom: 40px;
+    right: -30px;
+    width:  100px;
+    height: 100px ;
+    z-index: -1;
+
+}
+.ir_top_butom{
+    width: 0px;
+    height: 0px;
+    background-color: #2071b2; 
+    /border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+} */
+/* .ir_top{
+    position: absolute;
+    font-size: 50px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 255);
+}
+.mostrar{
+    z-index: 10;
+}  */
 
 
 /* _______________________________media Query____________________________________________- */
@@ -832,8 +877,9 @@ textarea {
         align-items: center;
         flex-direction: column;
         gap: 80px;
-        width: 50%;
+        width: 100%;
         transition: all 0.5s;
+       
     }
 
     .nav_input {
@@ -841,7 +887,7 @@ textarea {
     }
 
     .nav_input:checked~.nav_item {
-        left: 50%;
+        left: 0;
 
     }
     /* primera_seccion */
@@ -1145,6 +1191,22 @@ textarea {
     
 }
 @media (max-width:375px) {
+
+
+    .project_cards_titulo {
+      
+        height: 35px;
+        padding: 5px;
+        font-size: 28px;
+
+      
+    }
+
+    .project_cards_btn {
+        height: 40px;
+        font-size: 28px;
+    }
+
     /* quinta_seccion */
     .conteiner_footer {
         height: 130vh;
