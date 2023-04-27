@@ -1145,6 +1145,11 @@ textarea {
         width: 350px;
         height: 350px;
     }
+    .portada_section_parrafo_descripcion {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    
 
     /* segunda seccion */
     .about_seccion{
