@@ -13,7 +13,7 @@ export const arrayProject=[
     id:2,
     descripcion:" hola mundo",
     name:"Galery",
-    link:"hola",
+    link:"https://developerrobert.github.io/Galery/",
     imagen:"./Img/galery1.jpg",
     category:"web"
     },

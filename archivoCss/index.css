@@ -27,9 +27,10 @@
     --fontSice1: 18px;
     --fontSice2: 30px;
     --borber_bottom: 2px solid var(--color6);
-
-
 }
+
+
+
 
 body {
     background-color: var(--colorFondo1);
@@ -117,14 +118,16 @@ html {
     position: relative;
 }
 
-.elemento_before {
+.elemento_before,.elemento_project {
     position: absolute;
     bottom: -2px;
-    left: 0px;
     background-color: rgba(0, 0, 255, 0.692);
     width: 0%;
     height: 3px;
     transition: 0.5s;
+}
+.elemento_before{
+    left: 0px;
 }
 
 .elemento_after {
@@ -433,6 +436,26 @@ html {
 .icon_git{
     background-image: url("../Icon/github-icon.svg");
 }
+/* ____________________________________________________________ */
+
+.conteiner_modal{
+    border: var(--border);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.modal{
+    border: var(--border);
+    width: 350px;
+    height: 250px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+
 
 
 /* cuarte seccion ________________________________________________*/
@@ -472,7 +495,7 @@ html {
     cursor: pointer;
 }
 
-.section_project_li::after {
+/* .section_project_li::after {
     content: "";
     position: absolute;
     height: 4px;
@@ -491,12 +514,19 @@ html {
 
 .section_project_li:hover {
     color: black;
-}
+} */
 .btns{
     border: none;
     background-color: transparent;
     font-size: 23px;
     font-weight: 600;
+}
+.elemento_project {
+    right: 0;
+}
+.btns:hover>.elemento_project {
+    width: 100%;
+
 }
 
 
@@ -806,7 +836,7 @@ textarea {
 }
 
 .footer_contacto_titulo {
-    font-size: 10px;
+    font-size: 15px;
 }
 /* go_top___________________________________ */
 /* .ir_top_conteiner{

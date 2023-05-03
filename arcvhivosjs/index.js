@@ -2,6 +2,7 @@ import { arrayProject } from "./data.js";
 
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const listItems = [...document.querySelectorAll(".nav_items")]
@@ -56,9 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const contenedor=document.querySelector(".section_project_card")
     const btns=document.querySelectorAll(".btns")  
 
+    // console.log(btns)
+
     function filtro(array) {
         if (array.length === 0) {
             contenedor.innerText = " No se encontro proyectos ";
+            // contenedor.style.fonSince=" 40px"
         }else{
             contenedor.innerHTML="";
         }
@@ -82,9 +86,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     filtro(arrayProject);
 
+// ______________________________________________
+ const elemento_project=document.querySelectorAll(".elemento_project")
+
+
     for (let i = 0; i < btns.length; i++) {
         // console.log(i)
         btns[i].addEventListener("click",(e)=>{
+            // console.log(e.target.firstElementChild)
+            elemento_project.forEach((item) => { item.classList.remove("active") })
+            e.target.firstElementChild.classList.add("active")
+             
             let show= e.target.innerText.toLowerCase();
             if (show === "all") {
                 filtro(arrayProject)
@@ -97,6 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         
     }
+
+    
 
    
 
