@@ -829,8 +829,7 @@ textarea {
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: column;
-    gap: 20px; 
+    flex-direction: column; 
 }
 .footer_conteiner_icon {
     display: flex;
@@ -856,6 +855,7 @@ textarea {
     display: flex;
     align-items:center;
     justify-content: center;
+    margin-top: 10px;
 }
 .footer_redes{
     height:70%;
@@ -863,14 +863,14 @@ textarea {
     display: flex;
     justify-content:center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .footer_icon_conteiner {
     background-position: center;
     background-repeat: no-repeat;
-    height: 45px;
-    width: 45px;
+    height: 44px;
+    width: 44px;
     border: 2px solid blue;
     border-radius: 8px;
     margin-bottom: 30px;
