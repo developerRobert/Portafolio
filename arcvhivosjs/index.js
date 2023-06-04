@@ -60,10 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // console.log(btns)
 
     function filtro(array) {
+        
+        
         if (array.length === 0) {
-            contenedor.innerText = " No se encontro proyectos ";
-            // contenedor.style.fonSince=" 40px"
+            contenedor.innerText = " Proyectos no encontrados ";
+            contenedor.classList.add("noEncontrado")
+           
         }else{
+            contenedor.classList.remove("noEncontrado")
             contenedor.innerHTML="";
         }
 

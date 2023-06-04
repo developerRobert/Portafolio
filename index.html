@@ -36,51 +36,95 @@
 
         <!-- primera seccion -->
         <section class="portada_section section" id="Home"  data-id="0">
-            <h1 class="section_title  portada_section_titulo">Home</h1>
+            <div class="cont_section_portada_titulo">
+                <h1 class="section_title  portada_section_titulo">Home</h1>
+            </div>
             <div class="container_section_portada">
-                <img src="../Portafolio/Img/man2.jpg" class="portada_section_img" alt="">
+                <figure class="cont_section_portada_img">
+                    <img src="../Portafolio/Img/robert4.jpeg" class="portada_section_img" alt="">
+                </figure>
 
                 <div class="portada_section_Conteiner">
-                    <h2 class="portada_section_titulo_descripcion"> Hola, Soy Robert Morelo Nuñez.</h2>
-                    <h2 class="portada_section_texto_descripcion">Frontend Developer</h2>
-                    <p class="portada_section_parrafo_descripcion">soy un joven soñador, creativo, emprendedor y entregado en
-                        función de mis responsabilidades. Me gusta hacer ejercicio, viajar, compartir con mi familia y
-                        amigos.
-                    </p>
-                    <a href="#Footer" class="section_btn  portada_section_descripcion_btn">Contact Me <i class="fa-solid fa-phone"></i></a>
+                    <div class="cont_titulos">
+                        <h2 class="portada_section_titulo_descripcion"> Hola, Soy Robert Morelo Nuñez.</h2>
+                        <h2 class="portada_section_texto_descripcion">Frontend Developer</h2>
+                    </div>
+                    <div class="cont_portada_texto">
+                        <p class="portada_section_parrafo_descripcion">soy un joven soñador, creativo, emprendedor y entregado en
+                            función de mis responsabilidades. Me gusta hacer ejercicio, viajar, compartir con mi familia y
+                            amigos.
+                        </p>
+                    </div>
+                    <div class="cont_portada_btn">
+                        <a href="#Footer" class="section_btn  portada_section_descripcion_btn">Contact Me <i class="fa-solid fa-phone"></i></a>
+                    </div>
+                    
                 </div>
             </div>
-            <!-- <svg class="footer_wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="0.5" d="M0,32L40,37.3C80,43,160,53,240,58.7C320,64,400,64,480,69.3C560,75,640,85,720,117.3C800,149,880,203,960,202.7C1040,203,1120,149,1200,128C1280,107,1360,117,1400,122.7L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg> -->
+         
 
         </section>
         <!-- segunda seccion -->
         <section class="about_seccion section" id="about" data-id="1">
-            <h1 class="section_title   about_title">About</h1>
+            <div class="cont_section_portada_titulo about_titulos">
+                <h1 class="section_title   about_title">About</h1>
+            </div>
             <div class="about_section_conteiner">
-                <img src="../Portafolio/Img/man1.jpg" class="about_section_img" alt="">
+                <figure class="cont_section_portada_img cont_section_about_img">
+                    <img src="../Portafolio/Img/robert5.jpeg" class="about_section_img" alt="">
+                </figure>
                 <div class="about_section_conteiner_descripcion">
-                    <h1 class="about_section_descripcion_titulo">Descripcion</h1>
-                    <p class="about_asection_text_descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                        esse molestias. Accusamus maiores aliquid dolorum autem nobis beatae officia facilis dolores
-                        cupiditate atque illo fugiat, magnam alias tempora praesentium voluptas?</p>
-                    <h3 class="about_section_datosPersonales">Datos Personales</h3>
-                    <p class="about_descripcion_p telefono">Profesion: <span class="about_section_span">Gestor Naviero y
-                            Portuario | frontend Developer</span></p>
-                    <p class="about_descripcion_p nombre">Nombre: <span class="about_section_span">Robert Morelo Nuñez</span>
-                    </p>
-                    <p class="about_descripcion_p correo">Correo: <span
-                            class="about_section_span">Robert.mn23@hotmail.com</span></p>
-                    <p class="about_descripcion_p direccion">Direccion: <span class="about_section_span">Arjona-Bolivar</span>
-                    </p>
-                    <p class="about_descripcion_p telefono">Telefono: <span class="about_section_span">310-6045403</span></p>
-
-                    <a href="" class="section_btn about_section_descripcion_btn">Descargar CV <i class="fa-solid fa-download"></i></a>
+                    <div class="cont_about_descripcion_p">
+                        <div class="cont_about_descripcion_titulo_i">
+                            <h1 class="about_section_descripcion_titulo">Descripcion</h1>
+                        </div>
+                        <div class="cont_about_decripcion_texto" >
+                            <p class="about_asection_text_descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+                                esse molestias. Accusamus maiores aliquid dolorum autem nobis beatae officia facilis dolores
+                                cupiditate atque illo fugiat, magnam alias tempora praesentium voluptas?</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="cont_about_datos">
+                        <div class="cont_about_descripcion_titulo_i">
+                            <h1 class="about_section_descripcion_titulo  about_section_datosPersonales">Datos Personales</h1>
+                        </div>
+                        <div class="cont_about_span">
+                            <div class="cont_spans cont_profecion">
+                                <p class="about_descripcion_p texto_profecion">Profesion: <span class="about_section_span  span_profecion">Gestor Naviero y
+                                    Portuario | frontend Developer</span></p>
+                            </div>
+                            <div class="cont_spans">
+                                <p class="about_descripcion_p nombre">Nombre: <span class="about_section_span">Robert Morelo Nuñez</span>
+                                </p>
+                            </div>
+                            <div class="cont_spans">
+                                <p class="about_descripcion_p correo">Correo: <span
+                                    class="about_section_span">Robert.mn23@hotmail.com</span></p>
+                            </div>
+                            <div class="cont_spans">
+                                <p class="about_descripcion_p direccion">Direccion: <span class="about_section_span">Arjona-Bolivar</span>
+                                </p>
+                            </div>
+                            <div class="cont_spans">   
+                                 <p class="about_descripcion_p telefono">Telefono: <span class="about_section_span">310-6045403</span></p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="cont_about_btns">
+                        <a href="" class="section_btn about_section_descripcion_btn">Descargar CV <i class="fa-solid fa-download"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- tercera seccion -->
         <section class="section_skill section" id="skills" data-id="2">
-            <h1 class="section_title  section_skill_title">Skills</h1>
+            <div class="cont_section_portada_titulo">
+                <h1 class="section_title   section_skill_title">Skills</h1>
+            </div>
             <div class="section_coteiner_skill">
                 <div class="section_card_skill">
                     <h2 class="section_card_title">Frontend</h2>
@@ -99,6 +143,9 @@
                         </li>
                         <li class="card_skill_li">
                             <figure class="skill_icon icon_git"></figure>Github
+                        </li>
+                        <li class="card_skill_li">
+                            <figure class="skill_icon icon_boo"></figure>bootstrap 
                         </li>
                     </ul>
                 </div>
@@ -143,7 +190,10 @@
         </div> -->
         <!-- cuarta seccion -->
         <section class="section_project section" id="project" data-id="3">
-            <h1 class="section_title  section_project_title">Project</h1>
+            <div class="cont_section_portada_titulo">
+                <h1 class="section_title  section_project_title">Project</h1>
+            </div>
+          
             <div class="section_cotainer_project">
                 <ul class="section_project_ul">
                     <li class="section_project_li">
@@ -218,54 +268,68 @@
         
         <!-- Quinta Seccion -->
     <section class="footer_seccion section" id="Footer" data-id="4">
-        <h1 class="section_title  ">Contact</h1>
+        <div class="cont_section_portada_titulo  section_titulo_footer">
+            <h1 class="section_title  section_project_contac">Contact</h1>
+        </div>
         <div class="conteiner_footer">
-            <form action="" class="footer_form">
-                <h2 class="footer_titulo">Contact Me.</h2>
-                <div class="input_conteiner   ">
-                    <input type="text" id="username" class="footer_input">
-                    <label for="" class="label_input">Nombre</label>
-                </div>
-                <div class="input_conteiner   ">
-                    <input type="number" id="username" class="footer_input">
-                    <label for="" class="label_input">Celular</label>
-                </div>
-                <div class="input_conteiner   ">
-                    <input type="text" id="username" class="footer_input">
-                    <label for="" class="label_input">Correo</label>
-                </div>
-                <div class="input_conteiner   ">
-                    <textarea  class="footer_input" name="" id="" cols="30" rows="10"></textarea>
-                    <label for="" class="label_input">Mensaje</label>
-                </div>
-                <button class="footer_btn">Send</button>
-            </form>
+            <div class="cont_footer_form">
+                <form action="" class="footer_form">
+                    <div class="titulo_conteiner">
+                        <h2 class="footer_titulo">Contact Me.</h2>
+                    </div>
+                    <div class="input_conteiner   ">
+                        <input type="text" id="username" class="footer_input">
+                        <label for="" class="label_input">Nombre</label>
+                    </div>
+                    <div class="input_conteiner   ">
+                        <input type="number" id="username" class="footer_input">
+                        <label for="" class="label_input">Celular</label>
+                    </div>
+                    <div class="input_conteiner   ">
+                        <input type="text" id="username" class="footer_input">
+                        <label for="" class="label_input">Correo</label>
+                    </div>
+                    <div class="input_conteiner   ">
+                        <textarea  class="footer_input" name="" id="" cols="30" rows="10"></textarea>
+                        <label for="" class="label_input">Mensaje</label>
+                    </div>
+                    <div class="btn_conteiner">
+                        <button class="footer_btn">Send</button>
+                    </div>
+                </form>
+
+            </div>
+            
             <div class="footer_Contact">
-                <div>
-                    <ul class="footer_address">
-                        <h1 class="footer_title_contact ">Address:</h1>
-                        <li class="contac_li">
-                            <figure class="footer_icon_conteiner footer_address_icon   icon_phone"></figure> +57 310-6045403
-                        </li>
-                        <li class="contac_li">
-                            <figure class="footer_icon_conteiner footer_address_icon   icon_gmail"></figure> morelonu23@gmail.com
-                        </li>
-                        <li class="contac_li">
-                            <figure class="footer_icon_conteiner footer_address_icon icon_ubicacion "></figure> Ajona_Bolivar  Colombia
-                        </li>
-                    </ul> 
+                <div class="footer_direccion">
+                        <div class="cont_footer_titulo">
+                            <h1 class="footer_title_contact ">Address:</h1>
+                        </div>
+                        <div class="cont_footer_dire">
+                            <li class="contac_li">
+                                <figure class="footer_icon_conteiner footer_address_icon   icon_phone"></figure>+57 310-6045403 Colo-
+                            </li>
+                            <li class="contac_li">
+                                <figure class="footer_icon_conteiner footer_address_icon   icon_gmail"></figure> morelonu23@gmail.com
+                            </li>
+                            <li class="contac_li">
+                                <figure class="footer_icon_conteiner footer_address_icon icon_ubicacion "></figure> Ajona_Bolivar  Colombia
+                            </li>
+                        </div>
                 </div>
 
                 <div class="footer_conteiner_icon">
-                    <h1 class="footer_title_contact">Social Network:</h1>
+                    <div class="cont_footer_redes">
+                        <div class="cont_footer_redes_titulo">
+                            <h1 class="footer_title_contact">Social Network:</h1>
+                        </div>
                     <div class="footer_redes">
                     <a href="https://wa.me/3106045403" target="_blank"><figure class="footer_icon_conteiner section_footer icon_whatsApp"></figure></a>
                     <a href="https://github.com/developerRobert"><figure class="footer_icon_conteiner section_footer  icon_Git"></figure></a>
                     <a href="https://www.linkedin.com/in/robert-morelo-nu%C3%B1ez-6529801b8/" target="_blank">  <figure class="footer_icon_conteiner section_footer     icon_likedin"></figure></a>
                     <a href="https://www.instagram.com/robertmn23/" target="_blank"><figure class="footer_icon_conteiner section_footer icon_instagram"></figure></a> 
-
-                    </div>
-                    
+                    </div> 
+                    </div> 
                 </div>
             </div>
         </div>
