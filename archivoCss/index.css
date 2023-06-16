@@ -1263,7 +1263,7 @@ textarea {
     /* quinto */
     
     .footer_seccion{
-        height: 130vh;
+        height: 120vh;
     }
     .conteiner_footer{
         flex-direction: column;
@@ -1298,9 +1298,7 @@ textarea {
         font-size: 18px;
     }
     .footer_form_titulo{
-        font-size: 35px;
-        margin: 0 auto;
-        
+        font-size: 35px; 
     }
     
        
@@ -1355,6 +1353,15 @@ textarea {
     .footer_form_titulo{
         font-size: 30px;
     }
+    
+    .conteiner_footer {
+    justify-content: space-around;  
+    }
+    .cont_footer_form{
+        height: 75%;
+    }
+    
+    
 
 }
 @media (max-width:375px) {
