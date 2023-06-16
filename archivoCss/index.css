@@ -1201,7 +1201,7 @@ textarea {
         height: 55%;
     }
     .cont_section_about_img{
-        height: 50%;
+        height: 40%;
     }
     .portada_section_img,.about_section_img {
         width: 98%;
@@ -1311,7 +1311,6 @@ textarea {
     
 }
 @media (max-width:425px) {
-
     .section_title{
         margin: 0 auto;
     }
@@ -1355,10 +1354,22 @@ textarea {
     }
     
     .conteiner_footer {
-    justify-content: space-around;  
+    justify-content: space-between; 
+    height: 90%;
     }
     .cont_footer_form{
-        height: 75%;
+        width: 95%;
+        height: 70%;
+    }
+    .footer_form{
+        height: 95%;
+    }
+
+    .cont_about_btns{
+        height: 15%;
+    }
+    .about_section_descripcion_btn{
+        height: 50px;
     }
     
     
