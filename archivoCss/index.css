@@ -679,19 +679,18 @@ html {
 /* quinta seccion____________________________________ */
 .footer_seccion {
     background-color: #5dade246;
-
 }
 
 .conteiner_footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: row-reverse;
     width: 98%;
-    height: 98%;
-
+    height: 80%;
 }
 
-.input_conteiner , .btn_conteiner{
+/* .input_conteiner , .btn_conteiner{
     position: relative;
     width: 98%;
     height: 17%;
@@ -746,10 +745,10 @@ textarea {
     left: 0;
     color: black;
     font-size: 18px;
-}
+} */
 .cont_footer_form{
     width: 45%;
-    height: 97%;
+    height: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -758,34 +757,53 @@ textarea {
 .footer_form {
     width: 80%;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.308);
+    background-color: rgba(22,22,22,0..096);
     box-shadow: 0 10px 20px rgba(10, 12, 138, 0.384);
-    height: 98%;
+    padding: 20px;
+    height:95%;
     border-radius: 10px;
+    margin: 40px auto;
+    color: white;
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 4px;
+    gap: 20px;
 }
 
-.footer_titulo {
+.footer_form_titulo,.footer_title_contact {
     color: black;
     font-weight: bold;
     font-size: 35px;
+    border-bottom: 3px solid white;
+    max-width: max-content;
+}
+.form_input,.form_tarea{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.cont_form_btn{
+    width: 100%;
+    height: 25%;
+    justify-content:center;
+    align-items: center;
+    display: flex;
 }
 
 .footer_btn {
-    width: 95%;
-    height: 45px;
+    width: 98%;
+    height: 50px;
     text-align: center;
     border: none;
-    position: relative;
-    font-size: 18px;
+    font-size: 20px;
     background-color: blue;
+    /* background-color: var(--color3); */
     transition: 0.5s;
     color: white;
-    border-radius: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
 }
 
 .footer_btn:hover {
@@ -801,20 +819,20 @@ textarea {
 .footer_Contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    gap: 10px;
     width: 45%;
-    height: 97%;
+    height: 88%;
 }
 .footer_direccion{
     width: 98%;
-    height: 50%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
+    margin-top: 5px;
 }
 .cont_footer_titulo{
     width: 98%;
@@ -837,17 +855,16 @@ textarea {
     justify-content: center;
     flex-direction: column;
     width: 98%;
-    height: 45%;
-    gap: 30px;
+    height: 40%;
 }
 .cont_footer_redes{
     width: 98%;
-    height: 98%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 25px;
 }
 .cont_footer_redes_titulo{
     width: 98%;
@@ -855,15 +872,14 @@ textarea {
     display: flex;
     align-items:center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .footer_redes{
-    height:70%;
+    height:60%;
     width: 98%;
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
-    gap: 30px;
 }
 
 .footer_icon_conteiner {
@@ -902,19 +918,10 @@ textarea {
     background-image: url("../Icon/instagram.svg");
 }
 
-.footer_title_contact {
-    padding: 2px;
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: start;
-    border-bottom: 3px solid white;
-    width: max-content;
-}
 .section_footer:hover {
     background-color: rgb(0, 0, 255);
     border-radius: 8px;
+    color: white;
 }
 
 .icon_phone {
@@ -1040,9 +1047,9 @@ textarea {
         border-radius: 4px;
         height: 98%;
     }
-    .about_seccion{
-        height: 120vh;
-    }
+    /* .about_seccion{
+        height: 100vh;
+    } */
     .about_section_conteiner {
         height: 86%;  
         justify-content: space-around;
@@ -1125,9 +1132,6 @@ textarea {
 
     }
     /* primera_seccion */
-    .portada_section {
-        height: 140vh;
-    }
     .portada_section_img,.about_section_img{
       width: 90%;
     }
@@ -1170,13 +1174,9 @@ textarea {
 
     /* __________________________ */
     .footer_redes{
-        gap: 20px;
- 
+        gap: 40px;
     } 
-    .footer_icon_conteiner {
-        margin-bottom: 0px;
-    }
-
+    
 
 }
 @media (max-width:722px) {
@@ -1185,12 +1185,12 @@ textarea {
     }
     /* primero */
     .portada_section{
-        height: 130vh;
+        height: 120vh;
     }
    
     .container_section_portada {
         flex-direction: column;
-        height: 90%;
+        height: 95%;
     }
 
     .cont_about_decripcion_texto{
@@ -1215,17 +1215,22 @@ textarea {
     }
     .cont_titulos{
         height: 30%;
-        margin-top: 10px;
     }
     .cont_portada_btn{
-        height: 35%;
+        height: 30%;
+    }
+    .portada_section_descripcion_btn{
+        margin-top: 20px;
     }
     /* segundo */
     .about_titulos{
         height: 6%;
     }
     .about_seccion {
-        height: 180vh;
+        height: 170vh;
+    }
+    .about_section_span{
+        font-size: 19px;
     }
     .about_section_conteiner {
         height: 90%;
@@ -1242,9 +1247,6 @@ textarea {
         justify-content: center;
     }
     /* tercero */
-    .section_skill {
-        height: 115vh;
-    }
     .portada_section_titulo_descripcion{
         font-size: 25px;
     } 
@@ -1259,62 +1261,54 @@ textarea {
     }
    
     /* quinto */
+    
+    .footer_seccion{
+        height: 130vh;
+    }
     .conteiner_footer{
         flex-direction: column;
+        gap: 2px;
+        height:90%;
     }
-    .footer_seccion{
-            height: 160vh;
+    .cont_footer_form{
+        width: 90%;
+        height: 78%;
     }
+    
+    .footer_Contact{
+        width: 90%;
+        height:20%;
+    }
+    .footer_direccion{
+        height: 50%;
+    }
+   
+    .footer_conteiner_icon{
+        height: 100%;
        
-     .cont_footer_form{
-            width: 98%;
-            height: 60%;
-            justify-content: center;
-        }
-     .footer_Contact{
-            width: 98%;
-            height: 38%;
-            gap: 2px; 
-        }
-    .footer_form{
-            width: 88%;
-            height: 440px;
-        }
+    }
+    .footer_icon_conteiner{
+        margin-top: 5px;
+    }
+    
+    .footer_title_contact {
+    font-size: 25px;
+    }
+    .footer_contacto_titulo{
+        font-size: 18px;
+    }
+    .footer_form_titulo{
+        font-size: 35px;
+        margin: 0 auto;
+        
+    }
+    
+       
+    
     
 
     /* __________________________________ */
 
-    .footer_direccion{
-        height: 55%;
-        gap: 1px;
-    }
-
-    .cont_footer_titulo, .cont_footer_redes_titulo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20%;
-    }
-    .cont_footer_dire{
-        height: 80%;
-        gap: 8px;
-       align-items: last baseline;
-    }
-    .cont_footer_redes_titulo{
-    }
-    .footer_conteiner_icon{
-        height: 40%;
-        margin-top: 20px;
-    }
-    .footer_redes{
-        justify-content: center;
-        height: 40%;
-        margin-top: 8px;
-    }
-    .footer_icon_conteiner {
-        height: 40px;
-        width: 40px;
-    }
    
     
 }
@@ -1326,15 +1320,6 @@ textarea {
     .section_project_ul {
         gap: 30px;
     }
-   
-    .footer_form {
-        width: 350px;
-        height: 440px;
-       
-    }
-    textarea {
-        height: 50px;
-    }
     .footer_redes {
         gap: 15px;
 
@@ -1343,19 +1328,32 @@ textarea {
         width: 250px;
     }
     .cont_footer_dire{
-       align-items:flex-start;
+       align-items:center;
     }
     .footer_form{
         width: 95%;  
     }
     .portada_section_titulo_descripcion{
         font-size: 25px;
+        text-align: center;
     } 
     .portada_section_texto_descripcion{
         font-size: 18px;
     }
     .portada_section_parrafo_descripcion{
         font-size: 16px;
+    }
+    .cont_about_decripcion_texto{
+        margin-top: 10px;
+    }
+    .about_asection_text_descripcion{
+        font-size: 17px;
+    }
+    .footer_redes{
+      gap: 40px;
+    }
+    .footer_form_titulo{
+        font-size: 30px;
     }
 
 }
